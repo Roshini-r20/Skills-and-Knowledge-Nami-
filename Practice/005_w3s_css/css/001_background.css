@@ -1,0 +1,11 @@
+div{
+    background-color: aquamarine;
+    opacity: 0.5;
+}
+
+body{
+    background-image: url("/images/r.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    <script>
+                let emailPattern = new RegExp("(?=.*@)(?=.+.com)");
+                let emailString = prompt("Enter email id(someone@xyz.abc)");
+                if (!(emailPattern.test(emailString))) {
+                    alert("Email Id is invalid! It should contain@ and .");
+                }
+                else {
+                    alert("Email Id is Valid");
+                } 
+
+                let myPattern = /@gmail.com/; 
+let myString="rroshini3@gmail.com"; 
+document.write(myString.search(myPattern)+"<br/>");
+document.write(myString.replace(myPattern,"@facebook.com"));
+    </script>
+</body>
+</html>

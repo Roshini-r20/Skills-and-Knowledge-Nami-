@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>getElementById(x)<br>
+        Finds element with id 'x' and returns an object of type element </p>
+    <hr>
+    <p id="p1"> Paragraph 1</p> 
+    <p> Paragraph 2</p> 
+    <script> 
+        //Selects paragraph having id 'p1'
+        document.getElementById('p1'); 
+    </script>
+
+    <p>getElementsByTagName(x) <br>
+        Find element(s) whose tag name is 'x' and return NodeList, which is a list of element objects. </p>
+    <hr>
+    <p id="p1">Paragraph 1</p> 
+    <p>Paragraph 2</p> 
+    <script> 
+        document.getElementsByTagName('p'); 
+    </script> 
+
+    getElementsByClassName()<br>
+    Find element(s) whose class attribute's values is 'x' and returns NodeList, which is list of element objects
+    <hr>
+    <p class="myClass">Paragraph 1</p> 
+    <p>Paragraph 2</p> 
+    <script> 
+        //Selects paragraph having class = "myClass"
+        var x = document.getElementsByClassName('myClass'); 
+    </script> 
+
+    querySelectorAll() <br>
+    Find element(s) by CSS selectors and return NodeList, which is a list of element objects.
+    <hr>
+    <p class="blue">Paragraph 1</p> 
+    <script>
+        var x = document.querySelectorAll("p.blue");
+        x[0].innerHTML;
+    </script>
+    </body>
+</html>

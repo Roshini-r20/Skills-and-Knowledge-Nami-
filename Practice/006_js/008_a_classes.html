@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating classes</title>
+</head>
+<body>
+    <script>
+        class Calculator{
+            constructor(num1, num2){ // Constructor used for initializing the class instance
+                this.num1=num1;
+                this.num2=num2;
+            }
+            /* Methods of the class used for performing operations */
+            add()
+            {
+                return this.num1 + this.num2;
+            }
+            substract()
+            {
+                return this.num1 - this.num2;
+            }
+        }
+        let calculator = new Calculator(20,40); // Creating Calculator class object or instance
+        document.write("Addition method: "+ calculator.add()+"<br/>");
+        document.write("Subtraction method: "+calculator.substract());
+    </script>
+</body>
+</html>

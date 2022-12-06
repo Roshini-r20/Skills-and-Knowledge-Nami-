@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style>
+            body {
+                padding-top: 10px;
+            }
+        </style>
+    </head>
+	<body class="container-fluid">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3>For Loop</h3>
+			</div>
+			<div class="panel-body">
+				<script>
+                   
+                   var courses = ["HTML", "CSS", "JS", "Angular", "ReactJS"];
+                   for(var i=0; i< courses.length;i++)
+                   {
+                    document.write(courses[i]+"<br/>");
+                   }
+                   document.write("<br/>");
+                   document.write("<br/>");
+                   document.write("While loop<br/>");
+                   var loopVar = 1;
+                   while (loopVar <= 10) {
+                     document.write("2 *" + loopVar +"=");
+                     document.write(2 * loopVar);
+                     document.write("<br/>");
+                     loopVar++;
+                   }
+                   document.write("<br/>");
+                   document.write("<br/>");
+                   document.write("Do While loop<br/>");
+                   let ch;
+                do {
+                    execute();
+                    ch = prompt("Press Y to continue");
+                } while (ch == "Y");
+
+                function execute() {
+                    //Functions from No.1 to No.6 are Built-In Functions
+                    //1. alert 
+                    alert("Let us calculate SI");
+
+                    //2. prompt 
+                    let P = prompt("Please enter Principal Amount");
+                    let R = prompt("Please enter Rate of Interest ");
+                    let N = prompt("Please enter Number of Years ");
+                    document.write("You have entered P :  " + P + "<br><br>");
+                    document.write("You have entered R :  " + R + "<br><br>");
+                    document.write("You have entered N :  " + N + "<br><br>");
+
+                    //3. confirm 
+                    let decision = confirm("Shall we proceed to calculate SI?");
+                    if (decision) console.log("You decided to proceed" + "<br><br>");
+                    else console.log("You decided not to proceed" + "<br><br>");
+
+                    //4. eval  
+                    eval(P * R * N);
+                    document.write("Calculated SI is " + (eval(P * R * N)) / 100 + "<br><br>");
+                }
+				</script>
+			</div>
+		</div>
+	</body>
+</html>

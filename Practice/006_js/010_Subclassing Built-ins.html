@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subclassing Built-ins</title>
+</head>
+<body>
+    <script>
+    class myarray extends Array{
+        constructor(...args){
+            super(...args);
+        }
+        display(){
+            let itm="";
+            for(let val of this){
+                itm+= `${val} `;
+            }
+            console.log(itm);
+        }
+    }
+    let letters = new myarray("Sam", "Jack", "Tom");
+    letters.display(); 
+</script>
+</body>
+</html>

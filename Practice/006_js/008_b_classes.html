@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(name, age){
+                this.name=name;
+                this.age=age;
+            }
+        }
+        class Employee extends Person{
+            constructor(name, age, role, contact){
+                super(name,age);
+                this.role=role;
+                this.contact=contact;
+            }
+            getDetails() {
+                document.write("The detailes of the Employee are:<br/>");
+                document.write("Name: "+this.name+"<br/>"+"Age: "+this.age+"<br/>"+"Role: "+this.role+"<br/>"+"Phone: "+this.contact+"<br/>");
+            }
+        }
+        let emp= new Employee("Roshini R", 21, "Web Engineer",7760420592);
+        emp.getDetails();
+    </script>
+</body>
+</html>

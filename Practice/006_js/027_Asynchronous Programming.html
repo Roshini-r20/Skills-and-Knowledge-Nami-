@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous Programming</title>
+</head>
+
+<body>
+    <pre>
+        Some of the techniques are:
+        1. Callbacks: passed as an argument to another function. Callbacks make sure that a certain function does not execute until another function has already finished execution.
+        2. Promises: A Promise is a holder for a result (or an error) that will become available in the future.
+        3. Async/Await: "async/await" was introduced to implement asynchronous code with promises that resemble synchronous code.
+    </pre>
+    <script>
+        //pass any url that you wish to access to fetch()    
+        let response = await fetch(url);
+        if (response.ok) { // if HTTP-status is 200-299
+            // get the response body 
+            let json = await response.json();
+            console.log(json)
+        }
+        else {
+            console.log("HTTP-Error: " + response.status);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+    <pre>
+        types of object
+        1. user defined ->creating own objects
+        2. in built -> Global(primitive, miscellaneous), browser
+
+        ways of creating object
+        1. object literals
+        2. Constructor
+    </pre>
+    <h2> Creating Object using Literal notation </h2>
+    <script>
+        let myCar = {
+        name: "Fiat",
+        model: "VXI",
+        color: "red",
+        numberOfGears: 5,
+        currentGear: 3,
+        currentSpeed: 45,
+        accelerate: function(speedCounter) {
+            this.currentSpeed = this.currentSpeed + speedCounter;
+        return this.currentSpeed;
+    },
+     
+     brake: function (speedCounter) {
+         this.currentSpeed = this.currentSpeed - speedCounter;
+         return this.currentSpeed;
+     }
+    }
+    </script>
+    <h2>Creating Object using Function Constructor</h2>
+    <script>
+        function Car(name, model, color, numberOfGears, currentSpeed, currentGear) { 
+    //-------------States of the object--------- 
+    this.name = name; 
+    this.model = model; 
+    this.color = color; 
+    this.numberOfGears = numberOfGears;
+    this.currentSpeed = currentSpeed; 
+    this.currentGear = currentGear; 
+    //-------------Behaviour of the object--------- 
+    this.accelerate = function (speedCounter) {
+        this.currentSpeed = this.currentSpeed + speedCounter; 
+        return this.currentSpeed; 
+    }
+    this.brake = function (speedCounter) { 
+        this.currentSpeed = this.currentSpeed - speedCounter; 
+        return this.currentSpeed; 
+    } 
+} 
+
+    </script>
+</body>
+</html>

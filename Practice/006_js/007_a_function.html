@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            body {
+                padding-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <pre>
+            JavaScript has two types of functions.
+            1. User-defined functions
+            2. Built-in functions
+        </pre>
+        <h3>Nested function</h3>
+        <script>
+            function givemsg(message){
+                let usermsg=message;
+                function giveuser(user){
+                    let name=user;
+                    let greet= usermsg+name;
+                    return greet;
+                }
+                usermsg=giveuser("Roshini")
+                return usermsg;
+            }
+            document.write((givemsg("Hiii ")));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form>
+            <h4>Selecting Input Values from Dropdown</h4>
+            <!-- When the input is collected over select dropdown,
+             the user needs to select an option from the dropdown provided -->
+            Select Technology for appearing the Certification:
+            <select>
+                <option value="HTML">HTML </option>
+                <option value="CSS">CSS </option>
+                <option value="JS">JS </option>
+                <option value="WD" selected>Web Developer </option>                
+            </select>  <br/> <br/>
+            
+            <!-- When the input is collected through datalist, user can choose the vlue from the option list,
+                 or they can provide their own input through the input field -->
+            Choose Technology for appearing the Certification :<input list="Technologies" />
+            <datalist id="Technologies">
+                <option value="HTML">HTML </option>
+                <option value="CSS">CSS </option>
+                <option value="JS">JS </option>
+                <option value="WD" selected>Web Developer </option>         
+            </datalist> 
+            <h4>Slider Form Elements</h4>
+            <!-- input type range -->
+            Rate your experience:<input type="range" /> <br/> <br/>
+           
+            <!-- meter used to represent a gauge or to represent a measurement in a known scal -->
+            Time consumed for the training: <meter min="0" max="100" value="20">20 of 100</meter> <br/> <br/>
+            
+            <!-- Progress can be used to mark up the completion rate/degree of progress of an "in progress" task through a progress bar. -->
+            Completion of the course: <progress min="1" max="100" value="30">50 of 100</progress> <br/> <br/>
+
+            <input type="submit">
+        </form>
+    </body>
+</html>

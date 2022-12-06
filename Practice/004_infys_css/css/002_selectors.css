@@ -1,0 +1,17 @@
+body{
+    background-color: aliceblue;
+}
+
+.red{
+    background-color: yellow;
+    color: red;
+}
+
+div p {
+    background-color: yellow;
+    color: green;
+  }
+
+h1, h2, h3{
+    color: brown;
+}

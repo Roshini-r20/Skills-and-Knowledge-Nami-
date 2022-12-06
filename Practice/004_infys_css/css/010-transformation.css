@@ -1,0 +1,38 @@
+img {
+    width: 200px;
+    height: 200px;
+    border:1px solid black;
+}
+
+img#translate{
+    width:200px;
+   height:200px;
+   border:1px solid black;
+   transform:translate(45px,70px);
+}
+
+img#scale{
+    width:200px;
+   height:200px;
+   border:1px solid black;
+   transform:scale(0.5)
+}
+
+img#rotate{
+    width:200px;
+   height:200px;
+   border:1px solid black;
+   transform:rotate(45deg)
+}
+
+img#skew{
+    width:200px;
+   height:200px;
+   border:1px solid black;
+   transform:skew(45deg, 30deg)
+}
+
+pre:hover{
+    transform: rotate(7deg);
+    background-color:#aaa;
+}

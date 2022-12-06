@@ -1,0 +1,15 @@
+a:hover{
+    color: red;
+}
+
+a:visited{
+    color: purple;
+}
+
+input[type="text"]:enabled {
+    background-color: lightblue;
+}
+
+input[type="text"]:required{
+    background-color: aquamarine;
+}

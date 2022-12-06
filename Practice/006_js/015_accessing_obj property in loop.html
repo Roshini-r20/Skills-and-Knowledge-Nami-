@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing object properties using for..in loop</title>
+</head>
+
+<body>
+    <script>
+        let details = {
+            Name: 'Roshini',
+            age: 21,
+            company: 'Notespace Inc'
+        };
+        for (key in details) {
+            document.write(key + ":");
+            document.write(details[key] + " ");
+            document.write("<br/>");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Working with Statements and Expressions</title>
+    </head>
+    <body>
+        <pre>
+            1. conditional -> if, else-if, switch
+            2. non-conditional-> comment, break, continue
+        </pre>
+        <script>
+            var i=0;
+            for(i=0;i<5;i++)
+            {
+                console.log(i);
+                if(i==3)
+                break;
+            }
+
+            let workinghrs = 9.6;
+            let additionalhrs;
+            (workinghrs > 9.5)? additionalhrs = "You have positive additional hours" : additionalhrs = "You have negative additional hours"; 
+            document.write(additionalhrs)
+
+            // if
+            let marks = 76;
+            if (marks >= 75) {
+	            console.log("Very Good");
+            }
+            else if (marks < 85 && marks >= 50) {
+	            console.log("Good");
+            }
+            else {
+	            console.log("Needs Improvement");
+            }
+
+            // switch case
+            var perfRating = 15; 
+            switch (perfRating) { 
+                case 5: 
+                    console.log("Very Poor"); 
+                    break; 
+                case 4: 
+                    console.log("Needs Improvement"); 
+                    break; 
+                case 3: 
+                    console.log("Met Expectations"); 
+                    break; 
+                case 2: 
+                    console.log("Commendable"); 
+                    break; 
+                case 1: 
+                    console.log("Outstanding"); 
+                    break; 
+                default: 
+                    console.log("Sorry!! Invalid Rating."); 
+            } 
+        </script>
+    </body>
+</html>

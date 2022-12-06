@@ -1,0 +1,24 @@
+to install create-react app
+
+>npm install -g create-react-app
+
+​​​​​​​​​​​​​​If you do not want to install create-react-app
+> npx create-react-app my-app
+
+Files and its purposes
+node_modules: All the node module dependencies are created in this folder
+public:This folder contains the public static assets of the application
+public/index.html: This is the first page that gets loaded when you run the application
+src: All application related files/folders are created in this folder
+src/index.js: This is the entry point of the application
+package.json: ontains the dependencies of the React application
+
+npm start
+
+Getting Started with React JS
+
+>npm install json-server -g
+
+>json-server --watch db.json --port 4000
+
+>npm start

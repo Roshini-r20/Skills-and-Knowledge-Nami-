@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built in global objects</title>
+</head>
+
+<body>
+    <pre>
+        Date
+        String
+        Math
+        RegEx
+        JSON
+    </pre>
+    <script>
+        document.write("Date<br/>")
+        let dateObject1 = new Date();
+        document.write("Date is:" + dateObject1 + "<br/>");
+        document.write("Date is: " + dateObject1.getDate() + "<br/>");
+        document.write("Day is: " + dateObject1.getDay() + "<br/>");
+        document.write("Year is: " + dateObject1.getYear() + "<br/>");
+        document.write("Hours: " + dateObject1.getHours() + "<br/>");
+        document.write("Month is: " + dateObject1.getMonth() + "<br/>");
+        document.write("Time is: " + dateObject1.getTime() + "<br/>");
+        document.write("Millisecond: " + dateObject1.getMilliseconds() + "<br/>"); 
+    </script>
+    <h2>String object</h2>
+    <script>
+        let str = "Javascript Course";
+        let str2 = " Infy";
+        document.write("string is: " + str + "<br/>");
+        document.write("Length is: " + str.length + "<br/>");
+        document.write("Chat at position 5: " + str.charAt(5) + "<br/>");
+        document.write("Concat: " + str.concat(str2) + "<br/>");
+        document.write("Index of character c is : " + str.indexOf('c') + "<br/>");
+        document.write("String relpace: " + str.replace('script', 'Script') + "<br/>");
+        document.write("String match: " + str.match(/Course/) + "<br/>");
+        document.write("Split: " + str.split("") + "<br/>");
+        document.write("substring: " + str.substring(5, 8) + "<br/>");
+        document.write("substr: " + str.substr(5, 8) + "<br/>");
+        document.write("Lowercase: " + str.toLowerCase() + "<br/>");
+        document.write("Uppercase: " + str.toUpperCase() + "<br/>");
+        document.write("Slice:" + str.slice(0, 4));
+    </script>
+    <h2>RegExp </h2>
+    <script>
+        let myPattern1 = new RegExp(pattern, modifiers);
+        let myPattern2 = /pattern/modifiers
+        // to make sure that string has @ and .com 
+        let emailPattern = new RegExp("(?=.@*)(?=.+.com)");
+
+        //to make sure that given number has digits between 0-9 and max length of 10 digits 
+        let phoneNumberPattern = new RegExp("(?= [0-9]{10})");
+        //to make sure password has characters a to z, number 0-9 and special symbol @,#,$,%,!,^,&,*,+ or underscore
+        let passworPattern = new RegExp("(?=.*[0-9])(a-zA-Z)(?=.*[@#$%!^&*+_])");
+    </script>
+    <h2>Math Functions</h2>
+    <script>
+        document.write("MAX: " + Math.max(10, 20, 20.4, 20.6, 30.5) + "<br/>");
+        document.write("MIN: " + Math.min(10, 20, 20.4, 20.6, 30.5) + "<br/>");
+        document.write("Ceil: " + Math.ceil(20.4) + "<br/>");
+        document.write("Floor: " + Math.floor(20.4) + "<br/>");
+        document.write("Random: " + Math.random() + "<br/>");
+        document.write("round: " + Math.round(30.5) + "<br/>");
+        document.write("Sqrt: " + Math.sqrt(9) + "<br/>");
+    </script>
+    <h2>JSON</h2>
+    <script>
+        let stringJSON = '{"firstName":"Sam","lastName":"Fernandes"}'
+        let obj = JSON.parse(stringJSON);
+        console.log(obj);
+    </script>
+</body>
+
+</html>

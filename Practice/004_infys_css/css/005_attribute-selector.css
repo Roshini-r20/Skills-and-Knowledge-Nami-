@@ -1,0 +1,13 @@
+input[type="text"]{
+    background-color: aqua;
+    width: 150px;
+}
+
+input[type="password"]{
+    background-color: royalblue;
+    width: 150px;
+}
+
+input[type="button"] {
+    width: 120px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Summary</title>
+    <style>
+        div#maincontent {
+            height: 250px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 80px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+ 
+<body>
+    <center>
+        <div id="heading">
+            <h2>Booking Summary</h2>
+        </div>
+        <div id="maincontent">
+            <script>
+                function calculateCost(seats)
+                {
+                    var tc=seats*9;
+                    return tc;
+                }
+                function calculateDiscount(seats)
+                {
+                    var save=0;
+                    for(var i=1;i<=seats;i++)
+                    {
+                        var discount= (2*i+3);
+                        var cost=9-(discount/100*9);
+                        save=save+cost;
+                    }
+
+                    return save;
+                }
+                var seats=4;
+                document.write("Actual cost per ticket:$<br/>");
+                document.write("<br/>");
+                document.write(seats+" seats are eligible for festive discount!!<br/>");
+                document.write("<br/>");
+                document.write("Total cost of the ticket bedore discount: $"+ calculateCost(seats));
+                document.write("<br/>");
+                document.write("<br/>");
+                if(seats<=2)
+                {
+                    document.write(seats*9);
+                }
+                else if(seats>2 && seats<5)
+                {
+                    for(var i=1;i<=seats;i++)
+                    {
+                        document.write((2*i+3)+" % discount! on Ticket "+i+"<br/>");
+                    }
+                    document.write("<br/>");
+                document.write("Amount payable: $"+ calculateDiscount(seats));
+                document.write("<br/>");
+                }
+                else
+                {
+                    document.write("Booking is not allowed<br/>");
+                }
+                //Write the code to display the booking summary
+            </script>
+        </div>
+    </center>
+</body>
+ 
+</html>

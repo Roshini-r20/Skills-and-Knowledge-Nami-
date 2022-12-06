@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>main html </title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    </head>
+    <body style="background-image: url('images/r.jpg'); background-repeat: no-repeat;background-attachment: fixed; background-size: cover;">
+        <h1>The following page contains all the topics covered in HTML</h1>
+        <p>yoo!! get ready</p><hr>
+        <p title="This is about W3S" style="color: red;">i am learning HTML from W3Schools look</p>
+        <a href="https://www.w3schools.com">Visit W3Schools</a><br>
+        <img src="images/image.gif" alt="Sample image" width="150" height="140"><br>
+        <hr><p style="font-size: 20px;">types of headings</p>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6><br/><hr/>
+        <p>this is a poem</p>
+        <pre>
+            My Bonnie lies over the ocean.
+
+            My Bonnie lies over the sea.
+          
+            My Bonnie lies over the ocean.
+          
+            Oh, bring back my Bonnie to me.
+        </pre>
+        <p>this is html inline styles</p>
+        <p style="background-color: yellow; color: blue; font-family: 'Times New Roman';font-size: 25px;text-align: center;">This is a paragraph.</p>
+        <p>text formatting</p>
+        <p>this is <b>bold </b>text</p>
+        <p>this is <em>emphasised </em>text</p>
+        <p>this is <mark>marked</mark> text</p>
+        <p>this is <small>small</small> text</p>
+        <p>this is <del>deleted</del> and this is <ins>inserted</ins> text</p>
+        <p>this is <sub>subscript</sub> and this is <sup>superscript</sup></p>
+        <hr>
+        <p>  Blockquotes, q, abbr, address,cite,bdo</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 50 years, WWF has been protecting the future of nature.
+            The world's leading conservation organization,
+            WWF works in 100 countries and is supported by
+            1.2 million members in the United States and
+            close to 5 million globally.
+        </blockquote>
+        <q>Never give up!!</q><br>
+        <abbr title="Hyper text markup Language">HTML</abbr> is not a prog lang</abbr><br>
+        <p> to contact me</p>
+        <address>
+            Roshini<br>
+            my no<br>
+            my address
+        </address><br>
+        <bdo dir="rtl">this is Bi-Directional Override</bdo>
+        <p>Lets learn more about html Links<br>
+            <a href="https://www.w3schools.com/" target="_self">Visit W3Schools.com! in same tab</a><br>
+            <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools.com! in next tab</a><br>
+            <a href="https://www.w3schools.com/" target="_parent">Visit W3Schools.com! Opens the document in the parent frame</a><br>
+            <a href="https://www.w3schools.com/" target="_top">Visit W3Schools.com! Opens the document in the full body of the window</a><br>
+        </p>
+        <img src="images/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/computer.htm" target="_blank">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/html/phone.htm" target="_blank">
+            <area shape="circle" coords="337,300,44" alt="Coffee" href="https://www.w3schools.com/html/coffee.htm" target="_blank">
+        </map>
+        <br>
+        <table style="border: 1px solid black;">
+            <thead>
+                <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                  </tr>
+            </tbody>
+        </table>
+        <p> types of list<br>
+        <ul>Unordered list
+            <li style="list-style-type:circle;">Coffee</li>
+            <li style="list-style-type:square;">Tea</li>
+            <li>Milk</li>
+        </ul>
+    <ol>
+        <li type="a">Coffee</li>
+        <li type="A">Tea</li>
+        <li type="i">Milk</li>  
+        <li type="I">juice</li>  
+        <li type="1">Milkshake</li>  
+    </ol>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+      </dl>
+</p>
+<iframe src="0004_attributes.html" style="height:200px;width:400px;" title="Iframe Example"></iframe>
+<script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+    <h2>Fill in the form!!</h2>
+    <form action="/001_basic.html">
+        <fieldset>
+        <label for="firstname">First name:</label>
+        <input type="text" id="firstname" name="firstname" value="Roshini" readonly>
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="favcolour">Your fav colour:</label>
+        <input type="color" id="favcolour" name="favcolour"><br><br>
+
+        <label for="db">Enter DOB:</label>
+        <input type="date" id="db" name="db"><br><br>
+
+        <label for="dbt">select date time:</label>
+        <input type="datetime-local" id="dbt" name="dbt"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+
+        <label for="tel">Enter ph no:</label>
+        <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">><br><br>
+
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt"><br><br>
+
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week"><br><br>
+
+        <label for="homepage">Add your homepage:</label>
+        <input type="url" id="homepage" name="homepage"><br><br>
+
+        <label for="vol">volume:</label>
+        <input type="range" min="0" max="20" id="vol"><br><br>
+
+        <label for="gsearch">Search in google</label>
+        <input type="search" id="gsearch" name="gsearch"><br><br>
+
+        
+        Country: <input list="countries">
+<datalist id="countries">
+    <option value="India">
+        <option value="France">
+            <option value="Singapore">
+                <option value="Thailand">
+                    <option value="United Arab Emirates">
+                        <option value="United States of America">
+</datalist>
+
+
+        <p>Gender:
+        <input type="radio" id="male" name="male" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="female" value="feMale">
+        <label for="female">Female</label><br><br></p>
+
+        <p>Choose what you love<br>
+        <input type="checkbox" id="v1" name="bike">
+        <label for="v1">I love bike</label><br>
+        <input type="checkbox" id="v2" name="car">
+        <label for="v2">I love car</label><br>
+        <input type="checkbox" id="v3" name="train">
+        <label for="v3">I love train</label><br></p>
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br><br>
+
+        Disk usage: <meter min="0" max="100" value="50"></meter><br><br>
+        
+        Task completed: <progress min="0" max="100" value="50">50 of 100</progress><br><br>
+
+
+        <textarea name="message" rows="2" cols="20">Enter your comments</textarea>
+        <br><br>
+        <input type="submit"  value="submit">
+        <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+    </fieldset>
+    </form>
+    <video  width="320" height="240" controls>
+        <source src="mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video><br><br>
+
+    <iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+</iframe>
+    </body>
+</html>

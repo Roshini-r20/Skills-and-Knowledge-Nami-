@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        length returns the number of elements in the History list. Usage: history.length;
+        
+        Methods:
+        
+        1. back() method, loads previous URL from history list. Usage: history.back();
+        
+        2. forward() method, loads next URL from history list. Usage: history.forward();
+        
+        3. go() method, loads previous URL present at the given number from the history list.
+
+        appName: Returns the name of the client.  
+    </pre>
+    <script>
+        document.write("App name: "+navigator.appName+"<br/>");
+        document.write("App version: "+navigator.appVersion+"<br/>");
+        document.write("user's operating system: "+navigator.platform+"<br/>");
+        document.write("HTTP user-agent request header: "+navigator.userAgent+"<br/>");
+    </script>
+    <h2> Location Object</h2>
+    <script>
+        document.write("entire URL as a string: "+location.href+"<br/>");
+        document.write("hostname part of the URL: "+location.hostname+"<br/>");
+        document.write(" port number associated with the URL: "+location.port+"<br/>");
+        document.write("filename or path specified by the object: "+location.pathname+"<br/>");
+        //document.write("Loads new HTML document: "+location.assign("https://www.google.com/")+"<br/>");
+        //document.write("Reloads current HTML: "+location.reload()+"<br/>");
+    </script>
+</body>
+</html>
+

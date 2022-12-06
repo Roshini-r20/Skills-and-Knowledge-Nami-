@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <style>
+        table,tr,th,td{
+            border: 1px solid black;
+        }
+    </style>
+    <script src="/js/025_array.js"></script>
+</head>
+
+<body>
+    <script>
+        let colors = new Array(2);
+        colors[0] = "Red";
+        colors[1] = "Green";
+        document.write(colors + "<br/>");
+        let numArr1 = [10, 5, 20];
+        document.write("Max of no's 10, 5, 20 is:" + Math.max(...numArr1) + "<br/>");
+        let arr1 = [3, 5, 1];
+        let arr2 = [8, 2, 6];
+        let newArr2 = [0, ...arr1, 4, ...arr2];
+        document.write(newArr2 + "<br/>");
+        let arr3 = [3, 5, 1];
+        let arrCopy = [...arr3];
+        arrCopy.push(4);
+        document.write(arrCopy);
+    </script>
+    <h2>Array Methods</h2>
+    <table>
+        <thead>
+            <th>Methods</th>
+            <th>Description </th>
+            <th>Examples</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>map()</td>
+                <td>Creates a new array from the results of the calling function for every element in the array.</td>
+                <td ><u onclick="ExecuteMap();">Click here to see the example</u></td>
+            </tr>
+            <tr>
+                <td>join()</td>
+                <td>Returns a new string by concatenating all the elements of the array, separated by a specified operator such as comma. Default separator is comma</td>
+                <td onclick="ExecuteJoin();"><u>Click here to see the example</u></td>
+            </tr>
+            <tr>
+                <td>reduce()</td>
+                <td>Executes a defined function for each element of passed array and returns a single value</td>
+                <td onclick="ExecuteReduce();"><u>Click here to see the example</u></td>
+            </tr>
+        </tbody>
+    </table>
+    <h3><u onclick="ExecuteItr();">click for Iterables</u></h3>
+</body>
+
+</html>

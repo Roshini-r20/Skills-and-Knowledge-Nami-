@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-built Events and Handlers</title>
+    <style>
+        table, td, tr, th{
+            border: 1px solid black;
+            padding: 2px;
+            margin: 10px;
+        }
+    </style>
+    <script src="/js/011_In-built Events and Handlers.js"></script>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Event</th>
+            <th>Event-handler</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>click </td>
+                <td>onclick </td>
+                <td>When the user clicks on an element, the event handler onclick handles it. </td>
+            </tr>
+            <tr>
+                <td>keypress</td>
+                <td>onkeypress</td>
+                <td>When the user presses the keyboard's key, event handler onkeypress handles it. </td>
+            </tr>
+            <tr>
+                <td>keyup </td>
+                <td>onkeyup </td>
+                <td>When the user releases the keyboard's key, the event handler onkeyup handles it. </td>
+            </tr>
+            <tr>
+                <td>load </td>
+                <td>onload </td>
+                <td>When HTML document is loaded in the browser, event handler onload handles it </td>
+            </tr>
+            <tr>
+                <td>blur </td>
+                <td>onblur </td>
+                <td>When an element loses focus, the event handler onblur handles it.</td>
+            </tr>
+            <tr>
+                <td>change </td>
+                <td>onchange </td>
+                <td>When the selection of checked state change for input, select or text-area element changes, event handler onchange handles it. </td>
+            </tr>
+        </tbody>
+    </table>
+    <p onclick="executeme();">Click here to see the alert messsage</p>
+</body>
+</html>

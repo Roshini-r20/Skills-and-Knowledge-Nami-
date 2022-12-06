@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Datatypes Demo</title>
+    <style>
+        body {
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        Datatypes:
+        1. Primitive
+        a. number(integer, long, float, double)
+        b. string
+        c. boolean
+        d. undefined
+        e. null
+        f. "symbol" represents a unique identifier. You can make use of Symbol() to generate a value of this type.
+
+        2. non-primitive
+        a. object
+    </pre>
+    <script>
+    let firstName= "Roshini";
+    let lastName = "R"
+    let empid = Symbol("empno");
+    alert(empid.toString()); 
+    document.write(firstName+" "+lastName+ "<br/>");
+    document.write(firstName+"_"+lastName+"@gmail.com <br/>");
+    document.write(("<br\> Non primitive DT"));
+    let mySmartPhone = {   //objects
+    name: "iPhone", 
+    brand: "Apple", 
+    platform: "iOS", 
+    price: 50000 
+    }; 
+    let dummyArr = new Array();    //Array
+</script>
+</body>
+</html>
