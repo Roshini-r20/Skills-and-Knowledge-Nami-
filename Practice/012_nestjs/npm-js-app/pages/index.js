@@ -1,7 +1,6 @@
 import Layout from '../components/Layout/index';
 import fetch from 'isomorphic-unfetch';
 import Post from '../components/Posts/Post';
-import React from 'react';
 
 class Index extends React.Component {
   static async getInitialProps() {

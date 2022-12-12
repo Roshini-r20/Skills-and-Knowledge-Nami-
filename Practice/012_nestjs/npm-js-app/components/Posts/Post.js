@@ -1,4 +1,5 @@
 import { Container, Row, Col } from 'reactstrap';
+import Link from 'next/link';
 import {
   Card,
   CardImg,
@@ -22,7 +23,11 @@ const Post = ({ id, title, text, description }) => (
               <CardSubtitle>{description}</CardSubtitle>
             </CardBody>
             <CardBody>
-              <CardLink href="#">View Details</CardLink>
+              <CardLink>
+                <Link href={`/post?id=${id}`} as={`/post/${id}`}>
+                  <a>View Details</a>
+                </Link>
+              </CardLink>
             </CardBody>
           </Card>
         </div>
@@ -30,4 +35,11 @@ const Post = ({ id, title, text, description }) => (
     </Row>
   </Container>
 );
+// export default class Post extends React.Component {
+//   render() {
+//     return (
+
+//     );
+//   }
+// }
 export default Post;
