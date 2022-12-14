@@ -4,7 +4,7 @@ import fetch from 'isomorphic-unfetch';
 
 class Post extends React.Component {
   static async getInitialProps({ query: { id } }) {
-    const respose = await fetch(`http://localhost:3001/posts/${id}`);
+    const respose = await fetch(`${process.env.API_URL}/posts/${id}`);
     const post = await respose.json();
     return { post };
   }

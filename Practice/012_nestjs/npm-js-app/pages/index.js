@@ -4,7 +4,7 @@ import Post from '../components/Posts/Post';
 
 class Index extends React.Component {
   static async getInitialProps() {
-    const res = await fetch('http://localhost:3001/posts');
+    const res = await fetch(`${process.env.API_URL}/posts`);
     const posts = await res.json();
     console.log(posts);
     return { posts };
