@@ -8,6 +8,7 @@ import {
   NavLink
 } from 'reactstrap';
 import Link from 'next/link';
+import css from './Header.scss';
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -28,7 +29,10 @@ export default class Header extends React.Component {
       <div>
         <Navbar color="light" light expand="md">
           <Link href="/">
-            <NavbarBrand style={{ cursor: 'pointer' }}> NewsApp </NavbarBrand>
+            <NavbarBrand style={{ cursor: 'pointer' }} className={css.example}>
+              {' '}
+              NewsApp{' '}
+            </NavbarBrand>
           </Link>
 
           <NavbarToggler onClick={this.toggle} />
@@ -42,7 +46,11 @@ export default class Header extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
-        {/* <img src="/static/house.jpg" /> */}
+        <style jsx>{`
+          div {
+            font-weight: bold;
+          }
+        `}</style>
       </div>
     );
   }
